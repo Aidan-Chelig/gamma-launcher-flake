@@ -73,6 +73,13 @@
                 ]}"
           '';
 
+          postPatch = ''
+            substituteInPlace launcher/commands/install.py \
+              --replace-fail \
+              '            downloads_dir.rmdir()' \
+              $'            if downloads_dir.is_symlink():\n                downloads_dir.unlink()\n            else:\n                downloads_dir.rmdir()'
+          '';
+
           meta = {
             description =
               "Linux launcher for STALKER GAMMA";
