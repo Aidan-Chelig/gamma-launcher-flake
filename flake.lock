@@ -1,0 +1,45 @@
+{
+  "nodes": {
+    "gamma-launcher": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1782851221,
+        "narHash": "sha256-FLxJfP1fl3efRk9iAIAsMUrjQcUNa04GjiAKrYequF8=",
+        "owner": "Mord3rca",
+        "repo": "gamma-launcher",
+        "rev": "ade656e029a8547d8853ce1ba54f9b7f0acb9100",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Mord3rca",
+        "ref": "v3.1",
+        "repo": "gamma-launcher",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1792773339,
+        "narHash": "sha256-rZLrzrC6i+jnTAlvPZHogKDulY7WWDEv9hJeHieO7Zw=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "3ec636362e1816bc2f0888fa0fa2c69f1bc9e504",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-unstable",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "gamma-launcher": "gamma-launcher",
+        "nixpkgs": "nixpkgs"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
